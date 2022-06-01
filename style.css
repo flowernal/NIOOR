@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Margin okolo nadpisov */
+h1 {
+	margin: 20px;
+}
+
+/* Vycentrovanie obsahu v sekciach a spodny margin */
+body > div {
+	text-align: center;
+	margin-bottom: 75px;
+}
+
+/* Navigacna lista */
+.navbar {
+	overflow: hidden;
+	list-style-type: none;
+	background-color: #131313;
+	top: 0;
+
+	/* Aby navbar zostal na vrchu stranky pri scrollovani */
+	position: -webkit-sticky; /* Safari kompatibilita */
+	position: sticky;
+}
+
+/* Zarovnanie itemov v navbare vlavo */
+.navbar .navitem {
+	float: left;
+}
+
+/* Stylizacia prepojeni v navbare */
+.navbar .navitem .navlink {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 12px 14px;
+}
+
+/* Zmena farby pozadia prepojenia pri hoverovani */
+.navbar .navitem .navlink:hover {
+	background-color: #272727;
+}
+
+/* Zmena farby pozadia momentalne aktivneho prepojenia (cize na akej stranke sa nachadzame) */
+.navbar .navitem .active {
+	background-color: #009200;
+}
+
+/* Zmena farby pozadia prepojenia pri hoverovani (pokial je prepojenie aktivne) */
+.navbar .navitem .active:hover {
+	background-color: #49b618;
+}
+
+/* Stylizacia loga v navbare */
+.navbar .navitem .navlogo {
+	display: block;
+	width: 42px;
+	height: 42px;
+}
+
+/* Stylizacia obrazku v hlavicke stranky */
+header img {
+	display: block;
+	width: 100%;
+}
+
+/* Nastavenie maximalnej sirky textu v o nas sekcii a nasledne pridanie marginu a vycentrovanie */
+.about p {
+	max-width: 60%;
+	margin: 25px auto;
+}
+
+/* Margin 20px okolo vsetkych priamych child objektov divu karty */
+.karty > * {
+	margin: 20px;
+}
+
+/* Stylizacia karty */
+.karta {
+	/* Pridanie tienu vlavo a dole pre vytvorenie efektu karty */
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .25);
+	transition: 0.3s;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+/* Zvacsenie tienu pri hoverovani */
+.karta:hover {
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
+}
+
+/* Nastavenie paddingu v obsahu karty */
+.karta .obsah {
+	padding: 2px 16px;
+}
+
+/* Stylizacia obrazku v karte */
+.karta img {
+	border-radius: 5px 5px 0 0;
+}
+
+footer {
+	background-color: #272727;
+	text-align: center;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer h4, footer a:hover, footer a:visited:hover {
+	color: white;
+}
+
+footer p, footer a, footer a:visited {
+	color: #dbdbdb;
+}
+
+/* Aby boli divy vo footeri vedla seba */
+.footer-content > div {
+	display: inline-block;
+	margin: 20px;
+}
+
+.footer-stranky {
+	text-align: left;
+}
+
+.footer-stranky a {
+	display: block;
+}
+
+footer h3 {
+	color: #dbdbdb;
+}
